@@ -7,8 +7,6 @@ git clone https://github.com/your-username/invoice-billing-system.git
 cd invoice-billing-system/auth-service
 ```
 
-> 📁 Make sure you're inside the `auth-service` folder before continuing.
-
 ---
 
 ### 📦 2. Install Dependencies
