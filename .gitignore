@@ -1,2 +1,11 @@
-/auth-service/src/node_modules
+/auth-service/node_modules
 /auth-service/.env
+
+/user-service/node_modules
+/user-service/.env
+
+/payment-service/node_modules
+/payment-service/.env
+
+/invoice-service/node_modules
+/invoice-service/.env
