@@ -7,7 +7,7 @@ const app = express();
 // morgan(':method :url :status :res[content-length] - :response-time ms')
 
 const database = require("./config/database")
-const authRoutes = require("./routes/authRoutes");
+const userRoutes = require("./routes/userRoutes");
 
 app.use(express.json());
 
@@ -18,7 +18,7 @@ app.get("/health", (req, res) => {
     })
 })
 
-app.use("/api/users", authRoutes);
+app.use("/api/users", userRoutes);
 
 app.listen(process.env.PORT, (err) => {
     if (err) {
