@@ -1,10 +1,8 @@
 const User = require("../models/User");
 
 exports.getMyProfile = async (req, res) => {
-    console.log(req.user)
     try {
         const user = await User.findById(req.user).select({ _id: 1, name: 1, email: 1, createdAt: 1 });
-        console.log(user)
         if (!user) return res.status(404).json({ msg: "User not found" });
         res.json(user);
     } catch (err) {
